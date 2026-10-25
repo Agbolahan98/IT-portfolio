@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070b12" />
+  <meta name="description" content="Agbolahan — IT Support Engineer specialising in technical support, IT infrastructure, networking and systems administration." />
+  <title>Agbolahan | IT Support Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="stage">
+    <section class="phone" aria-label="Interactive IT portfolio">
+      <div class="phone-top"><span class="camera"></span><span class="speaker"></span><span class="camera camera-small"></span></div>
+      <div class="screen">
+        <div class="statusbar"><span id="status-time">09:41</span><span class="status-right"><span>5G</span><span class="signal">▂▄▆</span><span class="battery"><i></i></span></span></div>
+        <section class="lock-screen" id="lock-screen">
+          <div class="lock-top"><span class="tiny-pill"><span class="live-dot"></span> SYSTEM ONLINE</span><span class="lock-icon">⌑</span></div>
+          <div class="lock-content">
+            <div class="date-label" id="date-label">SUNDAY, OCTOBER 25</div>
+            <div class="clock" id="clock">09:41</div>
+            <div class="lock-greeting">AGBOLAHAN<span class="accent-dot">.</span></div>
+            <div class="role-label">IT SUPPORT ENGINEER <span class="role-line"></span></div>
+            <p class="lock-description">Keeping systems reliable.<br>Keeping people connected.</p>
+          </div>
+          <div class="lock-bottom">
+            <div class="lock-shortcuts"><button class="round-shortcut" id="quick-about" aria-label="Quick about"><span>⌘</span></button><button class="round-shortcut" id="quick-contact" aria-label="Quick contact"><span>↗</span></button></div>
+            <button class="unlock" id="unlock"><span class="unlock-arrow">↑</span><span>SWIPE / TAP TO UNLOCK</span></button>
+            <div class="home-indicator"></div>
+          </div>
+        </section>
+        <section class="home-screen hidden" id="home-screen">
+          <header class="home-header">
+            <div><div class="eyebrow"><span class="live-dot"></span> PERSONAL SYSTEM</div><h1>Welcome<span class="accent-dot">.</span></h1><p>Explore my IT workspace.</p></div>
+            <div class="avatar">A<span>+</span></div>
+          </header>
+          <div class="system-card">
+            <div class="system-card-top"><span>IT OPERATIONS STATUS</span><span class="status-ok">● AVAILABLE</span></div>
+            <div class="system-card-main"><div><strong>99.9<span>%</span></strong><small>UPTIME MINDSET</small></div><div class="mini-graph"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="system-card-bottom"><span>SUPPORT · INFRASTRUCTURE · SOLUTIONS</span><span>NG / REMOTE</span></div>
+          </div>
+          <div class="section-label"><span>APPLICATIONS</span><span>06 ITEMS</span></div>
+          <div class="app-grid">
+            <button class="app" data-app="about"><span class="app-icon icon-about"><b>AG</b></span><span>About me</span></button>
+            <button class="app" data-app="services"><span class="app-icon icon-services"><b>⌘</b></span><span>IT services</span></button>
+            <button class="app" data-app="projects"><span class="app-icon icon-projects"><b>▤</b></span><span>Projects</span></button>
+            <button class="app" data-app="skills"><span class="app-icon icon-skills"><b>⌁</b></span><span>Tech stack</span></button>
+            <button class="app" data-app="experience"><span class="app-icon icon-experience"><b>◷</b></span><span>Experience</span></button>
+            <button class="app" data-app="contact"><span class="app-icon icon-contact"><b>↗</b></span><span>Contact</span></button>
+          </div>
+          <div class="dock">
+            <button class="dock-app" data-app="about" aria-label="About"><span>AG</span></button>
+            <button class="dock-app" data-app="projects" aria-label="Projects"><span>▤</span></button>
+            <button class="dock-app" data-app="skills" aria-label="Skills"><span>⌁</span></button>
+            <button class="dock-app" data-app="contact" aria-label="Contact"><span>↗</span></button>
+          </div>
+          <div class="home-indicator"></div>
+        </section>
+        <section class="app-view hidden" id="app-view">
+          <header class="appbar"><button id="back-home" class="back-button">‹ <span>Home</span></button><span class="appbar-title" id="appbar-title">ABOUT ME</span><span class="window-dots"><i></i><i></i><i></i></span></header>
+          <div class="app-content" id="app-content"></div>
+          <div class="home-indicator"></div>
+        </section>
+      </div>
+      <div class="phone-bottom"></div>
+    </section>
+    <aside class="side-note">
+      <div class="side-kicker"><span class="live-dot"></span> PORTFOLIO INTERFACE / 01</div>
+      <h2>Technology should<br>just <span>work.</span></h2>
+      <p>An interactive portfolio for an IT support professional who enjoys solving problems, improving systems, and helping people get back to work.</p>
+      <div class="side-divider"></div>
+      <div class="side-meta"><span>BASED IN</span><strong>Lagos, Nigeria</strong></div>
+      <div class="side-meta"><span>OPEN TO</span><strong>Remote · On-site · Hybrid</strong></div>
+      <div class="side-meta"><span>FOCUS</span><strong>IT Support & Infrastructure</strong></div>
+      <div class="side-footer"><span>© <span id="year"></span> AGBOLAHAN</span><span>BUILT FOR RELIABILITY <b>↗</b></span></div>
+    </aside>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
